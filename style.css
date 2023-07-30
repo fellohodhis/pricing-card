@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+  background-color: #e5eff5;
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: 400;
+}
+body {
+  padding: 30px;
+}
+h2, h4, p {
+  margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+#card {
+  background-color: white;
+  box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+  border-radius: 5px;
+  overflow: hidden;
+}
+#top-section {
+  width: 100%;
+  height: 45%;
+  padding: 25px;
+}
+#top-section h2 {
+  color: #2ab2af;
+  margin-bottom: 20px
+}
+#top-section h4 {
+  color: #c0df34;
+  margin-bottom: 10px;
+}
+#top-section p {
+  color: #98a6bd;
+}
+#bottom-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 55%;
+  color: white;
+}
+#bottom-left {
+  height: 100%;
+  background-color: #2ab2af;
+  padding: 25px;
+  flex-basis: 50%;
+}
+#bottom-left p {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+#bottom-left h4 {
+  margin-bottom: 15px;
+}
+
+#price-container {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#month {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin-left: 5px;
+}
+
+#price {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#bottom-right {
+  height: 100%;
+  background-color: #43bab7;
+  padding: 25px;
+  flex-basis: 50%;
+}
+
+#btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: #c0df34;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+#btn:hover {
+  background-color: #B2BEB5;
+}
+ul {
+  list-style: none;
+  opacity: 0.6;
+  font-size: 0.8rem;
+  padding: 0px;
+}
+
+@media (min-width: 576px) {
+  
+  #card {
+    width: 550px;
+    height: 400px;
+  }
+  
+  #bottom-section {
+    flex-direction: row;
+  }
+}
